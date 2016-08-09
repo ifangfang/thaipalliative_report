@@ -30,61 +30,52 @@
 <div class="container"><!-- end div show under footer -->
 <?php include 'filter.php'; ?>
 <hr>
+<div class="container">
 <div class="row">
 <div class="col-lg-12 col-md-12">
-<h5>Tabs Sample</h5>
+<h5>Report</h5>
 <ul class="nav nav-tabs">
-<li class=""><a href="#home" data-toggle="tab">Home</a></li>
-<li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
-<li class="active"><a href="#messages" data-toggle="tab">Messages</a></li></ul>
-  <div class="tab-content">
-  <div class="tab-pane fade" id="home">
-                                <h4>Home Tab</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="profile">
-                                <h4>Profile Tab</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                </p>
+<li class="active"><a href="#report1" data-toggle="tab">ส่วนที่ 1 รายงานเฉพาะผู้ป่วยของ</a></li>
+<li><a href="#report2" data-toggle="tab">ส่วนที่ 2 รายงานเปรียบเทียบระหว่างหน่วยบริการกับพื้นที่อื่นๆ</a></li>
+<li><a href="#report3" data-toggle="tab">ส่วนที่ 3 การประเมินด้านจิตสังคม และจิตวิญญาณ</a></li>
+<li><a href="#report4" data-toggle="tab">ส่วนที่ 4 การยืมอุปกรณ์การแพทย์</a></li>
+</ul>
+<div class="tab-content">
+  <div id="report1" class="tab-pane fade in active">
+    <a href="#" class="btn btn-info">แสดงรายงาน</a>
+    <p><?php include 'report1.php'; ?></p>
+  </div>
+  <div id="report2" class="tab-pane fade">
+    <h4>แสดงรายงาน</h4>
+    <p>
+    <?php include 'report2.php'; ?></p>
+  </div>
+  <div id="report3" class="tab-pane fade">
+    <h4>แสดงรายงาน</h4>
+    <p>
+    <?php include 'report3.php'; ?></p>
+  </div>
+  <div id="report4" class="tab-pane fade">
+    <h4>แสดงรายงาน</h4>
+    <p>
+    <?php include 'report4.php'; ?></p>
+  </div>
+</div>
+</div>
+</div>
+</div>
 
-                            </div>
-                            <div class="tab-pane fade active in" id="messages">
-                                <h4>Messages Tab</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est laborum.
-                                </p>
-</div>
-</div>
-</div>
-</div> <!--End-->
-<div class="row">
-<div class="col-md-12"><?php include 'report1.php'; ?></div>
-</div>
-<div class="row">
-<div class="col-md-12"><?php include 'report2.php'; ?></div>
-</div>
-<div class="row">
-<div class="col-md-12"><?php include 'report3.php'; ?></div>
-</div>
-<div class="row">
-<div class="col-md-12"><?php include 'report4.php'; ?></div>
-</div>
+
+
+
+<!--End-->
 
         <!-- Footer -->
 <hr>
   <footer>
       <div class="row">
           <div class="col-lg-12">
-              <p>Copyright &copy; DAMASAC : Data Management and Statistical Analysis Center| 2016</p>
+              <p>Copyright &copy; DAMASAC : Data Management and Statistical Analysis Center | 2016</p>
             </div>
             </div>
 
